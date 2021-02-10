@@ -9,14 +9,17 @@ public class FindingPosition {
         pos_n = pos_n-1 + stage_n
          */
 
+        // Initialize values as given in the description
         int position = -1;
         int ultimate = -2; // stage_n-1
         int penultimate = 1; // stage_n-2
 
         for (int i = 3; i <= limit; i++) {
+            // Update values
             int currentStage = ultimate - penultimate;
             position += currentStage;
 
+            // Prepare for the next iteration
             penultimate = ultimate;
             ultimate = currentStage;
         }
