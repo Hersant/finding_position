@@ -29,6 +29,6 @@ public class FindingPosition {
 
     public static void main(String[] args) {
         int n = 4;
-        System.out.println("The dancer's postion at step " + n + " is " + getPosition(n));
+        System.out.println("The robot's postion at step " + n + " is " + getPosition(n));
     }
 }
